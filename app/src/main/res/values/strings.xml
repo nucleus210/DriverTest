@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">DrivingTest</string>
+
+    <!-- Edit text for entering question [CHAR LIMIT=20] -->
+    <string name="question">Write drive question here…</string>
+
+    <!-- Edit text for entering correct answer [CHAR LIMIT=20] -->
+    <string name="correct_answer">Write correct answer here…</string>
+
+    <!-- Edit text for entering second correct answer   [CHAR LIMIT=20] -->
+    <string name="write_secondary_right_answer_here">Write secondary right answer here…</string>
+
+    <!-- Edit text for entering answer for option A [CHAR LIMIT=20] -->
+    <string name="option_one">Write answer for option A here…</string>
+
+    <!-- Edit text for entering answer for option B [CHAR LIMIT=20] -->
+    <string name="option_two">Write answer for option B here…</string>
+
+    <!-- Edit text for entering answer for option C [CHAR LIMIT=20] -->
+    <string name="option_three">Write answer for option C here…</string>
+
+    <!-- Edit text for entering  answer Option D  [CHAR LIMIT=20] -->
+    <string name="write_answer_for_option_d_here">Write answer for option D here…</string>
+
+    <!-- Save to database button [CHAR LIMIT=20] -->
+    <string name="save_database">Save</string>
+
+    <!-- Back to main activity button [CHAR LIMIT=20] -->
+    <string name="back_main">Back</string>
+
+    <!-- User check to view all records in database button [CHAR LIMIT=20] -->
+    <string name="show_correct_answers">Show correct answers</string>
+
+    <!-- View all records in database button [CHAR LIMIT=20] -->
+    <string name="list">List</string>
+
+    <!-- Database path [CHAR LIMIT=20] -->
+    <string name="database_path">/data/data/</string>
+
+    <!-- Database directory [CHAR LIMIT=20] -->
+    <string name="database_dir">/databases/</string>
+
+    <!-- Count quiz number in format %d/%d [CHAR LIMIT=20] -->
+    <string name="quiz_counter">Quiz No:</string>
+
+    <!-- divider [CHAR LIMIT=20] -->
+    <string name="slash">/</string>
+
+    <!--Score bar case 1 [CHAR LIMIT=20] -->
+    <string name="score_a">"Yours correct answers are: "</string>
+
+    <!--Score bar case 3 [CHAR LIMIT=20] -->
+    <string name="score_cc">, keep learning</string>
+
+    <!--Score bar case 4 [CHAR LIMIT=20] -->
+    <string name="score_dd">, keep on that track</string>
+
+    <!--Score bar case 5 [CHAR LIMIT=20] -->
+    <string name="score_ee">, good job</string>
+
+    <!--Score bar case 10 [CHAR LIMIT=20] -->
+    <string name="score_ff">, all yours answers are correct</string>
+
+    <!--Error message [CHAR LIMIT=20] -->
+    <string name="error_empty_edit_text">Question edit text is empty, Enter question</string>
+
+    <!--Error message [CHAR LIMIT=20] -->
+    <string name="error_add_correct_answer">Correct answer edit text is empty, Enter correct answer</string>
+
+    <!--Error message [CHAR LIMIT=20] -->
+    <string name="add_new_row_database_message">Added new record to database</string>
+
+    <!--Error message [CHAR LIMIT=20] -->
+    <string name="error_add_correct_answer_database">Please add correct choice.</string>
+
+    <!--Score message [CHAR LIMIT=20] -->
+    <string name="scores">" scores"</string>
+
+    <!--Error message [CHAR LIMIT=20] -->
+    <string name="please_make_your_choice">Please make your choice</string>
+
+    <!--Message [CHAR LIMIT=20] -->
+    <string name="correct">Correct!</string>
+
+    <!--Error message [CHAR LIMIT=20] -->
+    <string name="error_image">Please select image</string>
+
+    <!--Space [CHAR LIMIT=20] -->
+    <string name="tab"> </string>
+
+    <!--Todo [CHAR LIMIT=20] -->
+    <string name="todo">TODO</string>
+
+    <!-- User name text [CHAR LIMIT=20] -->
+    <string name="type_your_name_here">Type your name here</string>
+
+    <!-- Dialog message [CHAR LIMIT=20] -->
+    <string name="times_up">Times Up! Please try again.</string>
+
+    <!-- Time format in minutes, second, milliseconds [CHAR LIMIT=20] -->
+    <string name="time_format">%02d:%02d</string>
+
+    <!-- Select Image button text [CHAR LIMIT=20] -->
+    <string name="select_image">Select image</string>
+
+    <!-- Start Image button text [CHAR LIMIT=20] -->
+    <string name="startButton">start</string>
+
+    <!-- Compose email text [CHAR LIMIT=20] -->
+    <string name="welcome_message">Welcome to Drivers quiz</string>
+
+    <!-- Check box text [CHAR LIMIT=20] -->
+    <string name="show_wrong_answers">Show wrong answers</string>
+
+    <!-- Email button text [CHAR LIMIT=20] -->
+    <string name="email">Email</string>
+
+    <!-- User input hint [CHAR LIMIT=20] -->
+    <string name="first_name">First name:</string>
+
+    <!-- Settings button text [CHAR LIMIT=20] -->
+    <string name="settings">Settings</string>
+
+    <!-- Result button text [CHAR LIMIT=20] -->
+    <string name="results_activity">Results</string>
+
+    <!-- Compose email text [CHAR LIMIT=20] -->
+    <string name="hi">Hello</string>
+
+    <!-- Compose email text [CHAR LIMIT=20] -->
+    <string name="result_message_a">Congratulations on passing the test.</string>
+
+    <!-- Compose email text [CHAR LIMIT=20] -->
+    <string name="result_message_b">Yours correct answers are:</string>
+
+    <!-- Compose email text [CHAR LIMIT=20] -->
+    <string name="dot">.</string>
+
+    <!-- New line [CHAR LIMIT=20] -->
+    <string name="new_line">\n</string>
+
+    <!-- Edit text title text [CHAR LIMIT=20] -->
+    <string name="type_your_answer">Type your answer:</string>
+
+    <!-- Edit text hint text [CHAR LIMIT=20] -->
+    <string name="type_answer">Please type numbers of age.</string>
+
+    <!-- Error message edit text is empty  [CHAR LIMIT=20] -->
+    <string name="view_result">Please enter number of ages and press results button</string>
+
+    <!-- Last quiz correct answer [CHAR LIMIT=20] -->
+    <string name="input_quiz_right_answer">18</string>
+
+    <!-- Last quiz question [CHAR LIMIT=20] -->
+    <string name="input_question">What is a minimum driving age at which a person may obtain a driver\'s licence to lawfully drive a motor vehicle on public roads?</string>
+
+</resources>

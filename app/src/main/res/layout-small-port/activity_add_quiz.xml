@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_main_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.android.drivertest.AddQuizActivity">
+
+    <RelativeLayout
+        android:id="@+id/add_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/main_padding">
+
+        <ImageView
+            android:id="@+id/quiz_image_view"
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/police_sign_01"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:id="@+id/set_image_button"
+            style="@style/Widget.AppCompat.ButtonBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quiz_image_view"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="@string/select_image"
+            android:textAlignment="center"
+            android:textColor="@color/colorText" />
+
+        <EditText
+            android:id="@+id/edit_question_text"
+            style="@style/userInputText"
+            android:layout_below="@id/set_image_button"
+            android:hint="@string/question" />
+
+        <EditText
+            android:id="@+id/right_answer_text"
+            style="@style/userInputText"
+            android:layout_below="@id/edit_question_text"
+            android:hint="@string/correct_answer" />
+
+        <EditText
+            android:id="@+id/right_answer_text_sec"
+            style="@style/userInputText"
+            android:layout_below="@id/right_answer_text"
+            android:hint="@string/write_secondary_right_answer_here" />
+
+        <EditText
+            android:id="@+id/edit_choice_a_text"
+            style="@style/userInputText"
+            android:layout_below="@id/right_answer_text_sec"
+            android:hint="@string/option_one" />
+
+        <EditText
+            android:id="@+id/edit_choice_b_text"
+            style="@style/userInputText"
+            android:layout_below="@id/edit_choice_a_text"
+            android:hint="@string/option_two" />
+
+        <EditText
+            android:id="@+id/edit_choice_c_text"
+            style="@style/userInputText"
+            android:layout_below="@id/edit_choice_b_text"
+            android:hint="@string/option_three" />
+
+        <EditText
+            android:id="@+id/edit_choice_d_text"
+            style="@style/userInputText"
+            android:layout_below="@id/edit_choice_c_text"
+            android:hint="@string/write_answer_for_option_d_here" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/edit_choice_d_text"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add_quiz_button"
+                style="?android:attr/buttonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/save_database" />
+
+            <Button
+                android:id="@+id/exit_quiz__activity_button"
+                style="?android:attr/buttonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/back_main" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/launcher_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_gradient_list"
+    android:orientation="vertical"
+    android:padding="@dimen/main_padding">
+
+    <LinearLayout
+        android:id="@+id/launcher_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/user_name"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/quiz_layout_shape"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/CustomTextDisplay1"
+            android:background="@drawable/quiz_layout_shape"
+            android:text="@string/welcome_message" />
+
+        <ImageView
+            android:id="@+id/launcher_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/main_padding"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/driver_launcher"
+            android:contentDescription="@string/todo" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/user_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/user_name"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:text="@string/first_name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse" />
+
+    <EditText
+        android:id="@+id/user_name"
+        style="@android:style/Widget.Holo.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/start_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/user_name_text"
+        android:layout_toRightOf="@id/user_name_text"
+        android:hint="@string/type_your_name_here"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/start_button"
+        style="@style/Widget.AppCompat.ButtonBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_animation"
+        android:text="@string/startButton" />
+
+    <Button
+        android:id="@+id/settings_button"
+        style="@style/Widget.AppCompat.ButtonBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/start_button"
+        android:layout_toStartOf="@id/start_button"
+        android:text="@string/settings" />
+</RelativeLayout>

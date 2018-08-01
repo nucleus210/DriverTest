@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <!-- Custom text title -->
+    <style name="CustomTextDisplay1" parent="@style/Base.TextAppearance.AppCompat.Headline">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">9dp</item>
+    </style>
+    <!-- Custom text style -->
+    <style name="CustomText" parent="@style/Base.TextAppearance.AppCompat.Large">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:freezesText">true</item>
+    </style>
+    <!-- Custom text small style -->
+    <style name="CustomTextSmall" parent="@style/Base.TextAppearance.AppCompat.Small">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:freezesText">true</item>
+    </style>
+    <!-- Custom input text style -->
+    <style name="InputText" parent="@style/Base.TextAppearance.AppCompat.Small">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:freezesText">true</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:textColorHint">@color/colorText</item>
+        <item name="android:padding">@dimen/small_device_main_padding</item>
+    </style>
+    <!-- Custom edit text style -->
+    <style name="userInputText" parent="@style/Base.TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:background">@drawable/button_shape</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:freezesText">true</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">text</item>
+
+    </style>
+    <!-- Custom text view for ListView style -->
+    <style name="listViewText" parent="@style/Base.TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">@drawable/quiz_layout_shape</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Radio button style -->
+    <style name="radioButtonLarge">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:button">@drawable/radio_button_background</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:checked">false</item>
+        <item name="android:freezesText">true</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+
+    </style>
+    <!-- Check box style -->
+    <style name="checkBox" parent="Base.Theme.AppCompat">
+        <item name="android:textColor">@color/colorTextDark</item>
+        <item name="android:layout_marginBottom">14dp</item>
+        <item name="android:paddingLeft">34dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Check box style -->
+    <style name="checkBoxQuestions" parent="Base.Theme.AppCompat">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="buttonTint">#fff</item>">
+    </style>
+</resources>

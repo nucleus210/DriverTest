@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/main_padding"
+    tools:context="com.example.android.drivertest.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/quiz_layout_shape">
+
+        <ImageView
+            android:id="@+id/quiz_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_below="@id/top_action_bar_view"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/police_sign_02"
+            tools:ignore="ContentDescription" />
+
+        <ScrollView
+            android:id="@+id/quiz_question_view"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/quiz_image_view"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/button_shape">
+
+            <TextView
+                android:id="@+id/text_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:padding="9dp"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorText"
+                android:textSize="16sp" />
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/main_question_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/action_bar_bottom_view"
+            android:layout_below="@id/quiz_question_view"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/top_action_bar_view"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/top_nav_bar">
+
+            <TextView
+                android:id="@+id/time_left"
+                style="@style/CustomText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                tools:ignore="RelativeOverlap" />
+
+            <TextView
+                android:id="@+id/exam_title_text"
+                style="@style/CustomText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/action_bar_bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/time_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:max="100"
+                android:progress="35"
+                android:progressDrawable="@drawable/progress_bar_custom" />
+
+            <Button
+                android:id="@+id/start_result_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/next_quiz_button"
+                android:layout_alignTop="@id/next_quiz_button"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@drawable/button_shape"
+                android:padding="8dp"
+                android:text="@string/results_activity"
+                android:textAlignment="center"
+                tools:ignore="RelativeOverlap" />
+
+            <ImageButton
+                android:id="@+id/next_quiz_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_shape"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_chevron_right_black_24dp"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/back_to_launch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_shape"
+                android:contentDescription="@string/todo"
+                android:rotation="180"
+                android:src="@drawable/ic_chevron_right_black_24dp"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

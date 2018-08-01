@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/main_padding">
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:contentDescription="@string/todo"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/ques_view"
+        style="@style/listViewText" />
+
+    <TextView
+        android:id="@+id/correct_answers_view"
+        style="@style/listViewText" />
+
+    <TextView
+        android:id="@+id/correct_answers_view_sec"
+        style="@style/listViewText" />
+
+    <TextView
+        android:id="@+id/opt_a"
+        style="@style/listViewText" />
+
+    <TextView
+        android:id="@+id/opt_b"
+        style="@style/listViewText" />
+
+    <TextView
+        android:id="@+id/opt_c"
+        style="@style/listViewText" />
+
+    <TextView
+        android:id="@+id/opt_d"
+        style="@style/listViewText" />
+
+</LinearLayout>
